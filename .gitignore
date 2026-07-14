@@ -174,3 +174,4 @@ configs/configs.generated.yml
 
 # fly.io
 fly.toml
+.DS_Store

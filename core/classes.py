@@ -38,8 +38,11 @@ class ParsedTweet():
     def __init__(self, source: Tweet | BeautifulSoup | dict):
         self.media = self.Media()
         self.quote = self.Quote()
-        
+
         self.is_mixed = False
+        self.text = None
+        self.trans_text = None
+        self.trans_lang = None
         
         if isinstance(source, Tweet):
             if hasattr(source, 'media') and len(source.media) > 0:
